@@ -600,4 +600,23 @@ Ubuntu 18.04.6 LTS ubuntu-bionic ttyS0
 
 ubuntu-bionic login: [   46.997143] cloud-init[1129]: Cloud-init v. 23.1.2-0ubuntu0~18.04.1 running 'modules:final' at Tue, 15 Apr 2025 13:27:36 +0000. Up 46.55 seconds.
 [   46.997519] cloud-init[1129]: Cloud-init v. 23.1.2-0ubuntu0~18.04.1 finished at Tue, 15 Apr 2025 13:27:37 +0000. Datasource DataSourceNoCloud [seed=/dev/sdb][dsmode=net].  Up 46.96 seconds
-
+[ 7030.985347] INFO: rcu_sched self-detected stall on CPU
+[ 7030.986053] INFO: rcu_sched self-detected stall on CPU
+[ 7031.183461] 	0-...!: (1 ticks this GP) idle=252/1/0 softirq=46200/46200 fqs=0 
+[ 7031.562515] 	1-...!: (1 ticks this GP) idle=bbe/140000000000001/0 softirq=17008/17008 fqs=0 
+[ 7031.575645] 	 (t=529171 jiffies g=8432 c=8431 q=4)
+[ 7031.647198] 	 (t=529171 jiffies g=8432 c=8431 q=4)
+[ 7031.647207] rcu_sched kthread starved for 529171 jiffies! g8432 c8431 f0x0 RCU_GP_WAIT_FQS(3) ->state=0x402 ->cpu=0
+[ 7031.699634] rcu_sched kthread starved for 529171 jiffies! g8432 c8431 f0x0 RCU_GP_WAIT_FQS(3) ->state=0x200 ->cpu=0
+[51236.388509] INFO: rcu_sched self-detected stall on CPU
+[51236.388856] INFO: rcu_sched self-detected stall on CPU
+[51236.571960] 	0-...!: (1 ticks this GP) idle=fb6/140000000000001/0 softirq=675987/675987 fqs=0 
+[51236.571962] 	 (t=120094 jiffies g=86881 c=86880 q=286)
+[51236.572085] rcu_sched kthread starved for 120094 jiffies! g86881 c86880 f0x0 RCU_GP_WAIT_FQS(3) ->state=0x402 ->cpu=0
+[51260.098812] 	1-...!: (1 GPs behind) idle=bf2/140000000000001/0 softirq=42097/42116 fqs=0 
+[51260.119308] 	 (t=120094 jiffies g=86881 c=86880 q=286)
+[51260.126256] INFO: rcu_sched self-detected stall on CPU
+[51260.136104] rcu_sched kthread starved for 3974317 jiffies! g86881 c86880 f0x0 RCU_GP_WAIT_FQS(3) ->state=0x0 ->cpu=0
+[51260.196278] 	0-...!: (2 ticks this GP) idle=fb6/140000000000001/0 softirq=675987/675987 fqs=0 
+[51260.231615] 	 (t=3974317 jiffies g=86881 c=86880 q=340)
+[51260.244058] rcu_sched kthread starved for 3974317 jiffies! g86881 c86880 f0x0 RCU_GP_WAIT_FQS(3) ->state=0x0 ->cpu=0
